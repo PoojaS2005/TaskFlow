@@ -1,0 +1,71 @@
+/* Filters.css */
+
+.filters {
+  display: flex;
+  gap: 12px;
+  margin: 16px 0;
+  padding: 12px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Inputs and selects */
+.filters input,
+.filters select {
+  padding: 10px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  background-color: #fafafa;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+/* Focus effects */
+.filters input:focus,
+.filters select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+  outline: none;
+  background-color: #fff;
+}
+
+/* Search input */
+.filters input {
+  flex: 2;
+}
+
+/* Dropdowns */
+.filters select {
+  flex: 1;
+  cursor: pointer;
+}
+
+/* Subtle hover */
+.filters input:hover,
+.filters select:hover {
+  background-color: #f0f0f0;
+}
+
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding: 12px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.filters input,
+.filters select {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}

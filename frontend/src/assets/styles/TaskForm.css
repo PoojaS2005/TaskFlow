@@ -1,0 +1,86 @@
+/* TaskForm.css */
+
+.task-form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: grid;
+  gap: 12px;
+  /* max-width: 500px; */
+  margin: 0 auto 20px auto;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-form:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Inputs */
+.task-form input,
+.task-form textarea,
+.task-form select {
+  padding: 10px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  background-color: #fafafa;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-form input:focus,
+.task-form textarea:focus,
+.task-form select:focus {
+  border-color: #6366f1; /* Indigo vibe */
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+  outline: none;
+  background-color: #fff;
+}
+
+/* Textarea resize + spacing */
+.task-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Inline row */
+.task-form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.task-form-row select,
+.task-form-row input[type="date"] {
+  flex: 1;
+}
+
+/* Button */
+.btn-primary {
+  background: linear-gradient(135deg, #6366f1, #4338ca);
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #4f46e5, #312e81);
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: scale(0.97);
+}
+
+/* Smooth animations */
+.task-form input,
+.task-form textarea,
+.task-form select,
+.btn-primary {
+  transition: all 0.2s ease-in-out;
+}
